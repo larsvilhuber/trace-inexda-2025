@@ -132,7 +132,6 @@ data2.table |> kable()
 
 - 🔒[Alt link](`r QUALTRICS_DASHBOARD`)
 
-### Notes
 
 ```{r, child=c(here::here('notes.md'))}
 ```
