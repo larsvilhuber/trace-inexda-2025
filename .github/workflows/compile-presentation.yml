@@ -19,15 +19,6 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
 
-    - name: Set Environment Variables
-      run: |
-        echo "QUALTRICS_BASE_URL=${{ secrets.QUALTRICS_BASE_URL }}" >> $GITHUB_ENV
-        echo "QUALTRICS_API_KEY=${{ secrets.QUALTRICS_API_KEY }}" >> $GITHUB_ENV
-          
-    - name: Check environment variables
-      run: |
-        echo "xxxxxxxxxx${QUALTRICS_BASE_URL}xxxxxxxxxx"
-        test -z "${QUALTRICS_BASE_URL}" && echo "QUALTRICS_BASE_URL is not set" && exit 1
     - name: Checkout
       uses: actions/checkout@v2
 
@@ -35,7 +26,6 @@ jobs:
       id: pages
       uses: actions/configure-pages@v3
   
-
     # Let's do the Quarto
     - name: Set up Quarto
       uses: quarto-dev/quarto-actions/setup@v2
@@ -48,6 +38,11 @@ jobs:
       uses: r-lib/actions/setup-renv@v2
       with:
         cache-version: 1
+    - name: Set Environment Variables
+      run: |
+        echo "QUALTRICS_BASE_URL=${{ secrets.QUALTRICS_BASE_URL }}" >> $GITHUB_ENV
+        echo "QUALTRICS_API_KEY=${{ secrets.QUALTRICS_API_KEY }}" >> $GITHUB_ENV
+          
     - name: Render Quarto Project
       env:
         QUARTO_PRINT_STACK: true
