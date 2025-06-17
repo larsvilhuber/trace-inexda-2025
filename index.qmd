@@ -99,7 +99,7 @@ You have work to do!
 
 ### Results
 
-```{r downloaddata2,include=FALSE}
+```{r downloaddata2,include=FALSE,eval=FALSE}
 # download data to local location
 
 data2.raw <- fetch_survey(surveyID = QUALTRICS_DAY2, verbose = TRUE) 
@@ -114,7 +114,7 @@ data2 <- data2.raw |>
 
 ```
 
-```{r create_table2, results='asis', include=TRUE,echo=FALSE,message=FALSE}
+```{r create_table2, results='asis', include=TRUE,eval=FALSE,echo=FALSE,message=FALSE}
 
 if ( nrow(data2) >0 ) {
 data2 |>
