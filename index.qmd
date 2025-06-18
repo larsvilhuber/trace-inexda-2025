@@ -71,16 +71,7 @@ plot(code)
 ```
 
 
-## What is TRACE?
-
-- <https://transparency-certified.github.io/>
-  - [Personas](https://transparency-certified.github.io/trace-specification/docs/users.html)
-  - [Barriers to transparency](https://transparency-certified.github.io/trace-specification/docs/barriers.html)
-  - [TRACE Elements: TRO and TRS](https://transparency-certified.github.io/trace-specification/docs/elements.html)
-- [A sample implementation - walkthrough](https://transparency-certified.github.io/trace-specification/docs/sample-implementation.html)
-
-
-## Close...
+## Verification
 
 - [cascad](https://www.cascad.tech/)
   - [The Role of Third-Party Verification in Research Reproducibility](https://doi.org/10.1162/99608f92.6d4bf9eb)
@@ -89,6 +80,14 @@ plot(code)
   - [Introducing Reproducible Research Standards at the World Bank](https://doi.org/10.1162/99608f92.21328ce3)
   - [Example report 1](https://reproducibility.worldbank.org/index.php/catalog/288/study-description)
   - [Example report 2](https://reproducibility.worldbank.org/index.php/catalog/224/related-materials)
+
+## What is TRACE?
+
+- <https://transparency-certified.github.io/>
+  - [Personas](https://transparency-certified.github.io/trace-specification/docs/users.html)
+  - [Barriers to transparency](https://transparency-certified.github.io/trace-specification/docs/barriers.html)
+  - [TRACE Elements: TRO and TRS](https://transparency-certified.github.io/trace-specification/docs/elements.html)
+- [A sample implementation - walkthrough](https://transparency-certified.github.io/trace-specification/docs/sample-implementation.html)
 
 
 ## Survey 
