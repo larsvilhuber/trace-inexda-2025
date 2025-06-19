@@ -92,7 +92,7 @@ plot(code)
 
 ## Survey 
 
-You have work to do!
+This was skipped, but feel free to fill it out!
 
 <`r file.path(QUALTRICS_FULL_URL,QUALTRICS_DAY2)`>
 
@@ -129,7 +129,10 @@ data2.table |> kable()
 }
 ```
 
-- 🔒[Alt link](`r QUALTRICS_DASHBOARD`)
+
+
+```{r, child=c(here::here('99-links.md'))}
+```
 
 
 ```{r, child=c(here::here('notes.md'))}
